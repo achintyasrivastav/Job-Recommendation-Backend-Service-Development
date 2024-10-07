@@ -12,45 +12,59 @@ This project implements a new feature for an AI-powered talent acquisition platf
 ├── server.js                 # Express server setup
 ├── .env.example              # Example environment variables file
 ├── .gitignore                # Git ignored files (including .env)
-└── README.md                 # Project documentation 
---------
+└── README.md                 # Project documentation
+```
 
-# Features
-Content-based job recommendation using TF-IDF scores.
-Keyword matching fallback for job suggestions when TF-IDF scores are low.
-API endpoints for job CRUD operations and fetching recommendations.
-MongoDB as the database for storing job postings and user data.
-Setup Instructions
-Prerequisites
-Node.js and npm installed
-MongoDB installed and running
-Installation
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/your-username/job-recommendation-system.git 
-cd job-recommendation-system
-Install dependencies:
+*   **Content-based job recommendation** using TF-IDF scores.
+*   **Keyword matching fallback** for job suggestions when TF-IDF scores are low.
+*   API endpoints for job CRUD operations and fetching recommendations.
+*   MongoDB as the database for storing job postings and user data.
 
-bash
-Copy code
-npm install
-Set up environment variables:
+## Setup Instructions
 
-Create a .env file in the root of the project based on .env.example:
-bash
-Copy code
-cp .env.example .env
-Edit the .env file with your MongoDB connection string:
-bash
-Copy code
-MONGO_URI=mongodb://localhost:27017/job-recommendation-db
-Start the MongoDB service.
+### Prerequisites
 
-Run the application:
+*   Node.js and npm installed
+*   MongoDB installed and running
 
-bash
-Copy code
-npm start
-The server should be running at http://localhost:3000.
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/job-recommendation-system.git 
+    cd job-recommendation-system
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Set up environment variables:**
+
+    * Create a `.env` file in the root of the project based on `.env.example`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    * Edit the `.env` file with your MongoDB connection string:
+
+    ```bash
+    MONGO_URI=mongodb://localhost:27017/job-recommendation-db
+    ```
+
+4.  **Start the MongoDB service.**
+
+5.  **Run the application:**
+
+    ```bash
+    npm start
+    ```
+
+    The server should be running at `http://localhost:3000`.
+
