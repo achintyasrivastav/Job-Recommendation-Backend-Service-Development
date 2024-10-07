@@ -68,3 +68,25 @@ This project implements a new feature for an AI-powered talent acquisition platf
 
     The server should be running at `http://localhost:3000`.
 
+
+## API Endpoints
+
+* **GET /jobs** – Fetch all job postings.
+* **GET /jobs/:job_id** – Fetch a job by ID.
+* **POST /jobs** – Add a new job posting.
+* **POST /jobs/recommendations** – Get job recommendations based on user profile.
+
+
+## Recommendation Logic
+
+1. **Preprocessing:**
+    * Text data (job titles, skills, etc.) is tokenized and cleaned by removing stop words.
+2. **TF-IDF Matching:**
+    * Calculates a match score based on user preferences and job requirements.
+3. **Keyword Matching Fallback:**
+    * If TF-IDF scores are too low, a keyword-based matching algorithm suggests jobs.
+
+
+## Contributing
+
+Feel free to fork this project and submit pull requests. Make sure to provide proper documentation for any changes you make.
