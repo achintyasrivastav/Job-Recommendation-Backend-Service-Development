@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Creating Job Schema
 const jobSchema = new mongoose.Schema({
 
     job_id: {
@@ -14,7 +15,7 @@ const jobSchema = new mongoose.Schema({
         type: String, 
     },
     location: {
-        type: [String],  //Assuming if user selects multiple location
+        type: [String],  //Assuming if jobs opens for multiple location
     },
     job_type: { 
         type: String,  
@@ -27,6 +28,5 @@ const jobSchema = new mongoose.Schema({
     }
 
 });
-
   
 module.exports = mongoose.model('JobDetails', jobSchema);
