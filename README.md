@@ -11,7 +11,6 @@ This project implements a new feature for an AI-powered talent acquisition platf
 ├── db.js                     # MongoDB connection setup
 ├── server.js                 # Express server setup
 ├── .env.example              # Example environment variables file
-├── .gitignore                # Git ignored files (including .env)
 └── README.md                 # Project documentation
 ```
 
